@@ -1,0 +1,272 @@
+  {
+    "dataSources": [
+      {
+        "source": "AWS CloudTrail",
+        "account_profile_pairs": [
+          {"account_id": "your-account-id", "profile_name": "your-profile-name"}
+        ],
+        "lookup_Attributes": [
+            {
+                "RuleName": "IAM User Management",
+                "AttributeKey": "EventName",
+                "AttributeValue": "CreateUser"
+              },
+              {
+                "RuleName": "IAM User Management",
+                "AttributeKey": "EventName",
+                "AttributeValue": "DeleteUser"
+              },
+              {
+                "RuleName": "IAM User Management",
+                "AttributeKey": "EventName",
+                "AttributeValue": "CreateRole"
+              },
+              {
+                "RuleName": "IAM User Management",
+                "AttributeKey": "EventName",
+                "AttributeValue": "DeleteRole"
+              },
+              {
+                "RuleName": "IAM User Management",
+                "AttributeKey": "EventName",
+                "AttributeValue": "CreateGroup"
+              },
+              {
+                "RuleName": "IAM User Management",
+                "AttributeKey": "EventName",
+                "AttributeValue": "DeleteGroup"
+              },
+              {
+                "RuleName": "IAM User Management",
+                "AttributeKey": "EventName",
+                "AttributeValue": "CreateAccessKey"
+              },
+              {
+                "RuleName": "IAM User Management",
+                "AttributeKey": "EventName",
+                "AttributeValue": "DeleteAccessKey"
+              },
+              {
+                "RuleName": "IAM User Management",
+                "AttributeKey": "EventName",
+                "AttributeValue": "UpdateAccessKey"
+              },
+              {
+                "RuleName": "IAM User Management",
+                "AttributeKey": "EventName",
+                "AttributeValue": "AttachRolePolicy"
+              },
+              {
+                "RuleName": "IAM User Management",
+                "AttributeKey": "EventName",
+                "AttributeValue": "DetachRolePolicy"
+              },
+              {
+                "RuleName": "IAM User Management",
+                "AttributeKey": "EventName",
+                "AttributeValue": "GetLoginProfile"
+              },
+              {
+                "RuleName": "IAM User Management",
+                "AttributeKey": "EventName",
+                "AttributeValue": "CreateLoginProfile"
+              },
+              {
+                "RuleName": "IAM User Management",
+                "AttributeKey": "EventName",
+                "AttributeValue": "DeleteLoginProfile"
+              },
+              {
+                "RuleName": "Policy Rules",
+                "AttributeKey": "EventName",
+                "AttributeValue": "PutGroupPolicy"
+              },
+              {
+                "RuleName": "Policy Rules",
+                "AttributeKey": "EventName",
+                "AttributeValue": "PutRolePolicy"
+              },
+              {
+                "RuleName": "Policy Rules",
+                "AttributeKey": "EventName",
+                "AttributeValue": "PutUserPolicy"
+              },
+              {
+                "RuleName": "S3 Activity",
+                "AttributeKey": "EventName",
+                "AttributeValue": "PutBucketAcl"
+              },
+              {
+                "RuleName": "S3 Activity",
+                "AttributeKey": "EventName",
+                "AttributeValue": "PutBucketPolicy"
+              },
+              {
+                "RuleName": "S3 Activity",
+                "AttributeKey": "EventName",
+                "AttributeValue": "DeleteBucket"
+              },
+              {
+                "RuleName": "S3 Activity",
+                "AttributeKey": "EventName",
+                "AttributeValue": "GetObject"
+              },
+              {
+                "RuleName": "S3 Activity",
+                "AttributeKey": "EventName",
+                "AttributeValue": "PutObject"
+              },
+              {
+                "RuleName": "EC2 Instance Activity",
+                "AttributeKey": "EventName",
+                "AttributeValue": "RunInstances"
+              },
+              {
+                "RuleName": "EC2 Instance Activity",
+                "AttributeKey": "EventName",
+                "AttributeValue": "TerminateInstances"
+              },
+              {
+                "RuleName": "EC2 Instance Activity",
+                "AttributeKey": "EventName",
+                "AttributeValue": "ModifyInstanceAttribute"
+              },
+              {
+                "RuleName": "CloudTrail Management",
+                "AttributeKey": "EventName",
+                "AttributeValue": "StartLogging"
+              },
+              {
+                "RuleName": "CloudTrail Management",
+                "AttributeKey": "EventName",
+                "AttributeValue": "StopLogging"
+              },
+              {
+                "RuleName": "CloudTrail Management",
+                "AttributeKey": "EventName",
+                "AttributeValue": "UpdateTrail"
+              },
+              {
+                "RuleName": "CloudTrail Management",
+                "AttributeKey": "EventName",
+                "AttributeValue": "DeleteTrail"
+              },
+              {
+                "RuleName": "CloudTrail Management",
+                "AttributeKey": "EventName",
+                "AttributeValue": "PutEventSelectors"
+              },
+              {
+                "RuleName": "Access Modifications",
+                "AttributeKey": "EventName",
+                "AttributeValue": "CreateSecurityGroup"
+              },
+              {
+                "RuleName": "Access Modifications",
+                "AttributeKey": "EventName",
+                "AttributeValue": "DeleteSecurityGroup"
+              },
+              {
+                "RuleName": "Access Modifications",
+                "AttributeKey": "EventName",
+                "AttributeValue": "UpdateSecurityGroup"
+              },
+              {
+                "RuleName": "Access Modifications",
+                "AttributeKey": "EventName",
+                "AttributeValue": "AuthorizeSecurityGroupIngress"
+              },
+              {
+                "RuleName": "Access Modifications",
+                "AttributeKey": "EventName",
+                "AttributeValue": "AuthorizeSecurityGroupEgress"
+              }
+
+        ]
+      },
+      {
+        "source": "Azure Activity Log",
+        "subscription_ids": [
+          "your-subscription-id"
+        ],
+        "lookup_Attributes": [
+
+              {
+                "RuleName": "Resource Group Created",
+                "AttributeKey": "operationName",
+                "AttributeValue": "Microsoft.Resources/subscriptions/resourcegroups/write"
+              },
+              {
+                "RuleName": "Resource Group Deleted",
+                "AttributeKey": "operationName",
+                "AttributeValue": "Microsoft.Resources/subscriptions/resourcegroups/delete"
+              },
+              {
+                "RuleName": "Resource Created",
+                "AttributeKey": "operationName",
+                "AttributeValue": "Microsoft.Resources/deployments/write"
+              },
+              {
+                "RuleName": "Resource Deleted",
+                "AttributeKey": "operationName",
+                "AttributeValue": "Microsoft.Resources/deployments/delete"
+              },
+              {
+                "RuleName": "Azure VM Management",
+                "AttributeKey": "operationName",
+                "AttributeValue": "Microsoft.Compute/virtualMachines/write"  
+              },
+              {
+                "RuleName": "Azure VM Management",
+                "AttributeKey": "operationName",
+                "AttributeValue": "Microsoft.Compute/virtualMachines/delete"  
+              },
+              {
+                "RuleName": "Azure Storage Management",
+                "AttributeKey": "operationName",
+                "AttributeValue": "Microsoft.Storage/storageAccounts/write"  
+              },
+              {
+                "RuleName": "Azure Storage Management",
+                "AttributeKey": "operationName",
+                "AttributeValue": "Microsoft.Storage/storageAccounts/delete"  
+              },
+              {
+                "RuleName": "Azure Storage Activity",
+                "AttributeKey": "operationName",
+                "AttributeValue": "Microsoft.Storage/storageAccounts/blobServices/containers/write"  
+              },
+              {
+                "RuleName": "Azure Storage Activity",
+                "AttributeKey": "operationName",
+                "AttributeValue": "Microsoft.Storage/storageAccounts/blobServices/containers/delete"  
+              },
+              {
+                "RuleName": "Security Assessment Completed",
+                "AttributeKey": "operationName",
+                "AttributeValue": "Microsoft.Security/assessments/write"
+              },
+              {
+                "RuleName": "Security Alert Raised",
+                "AttributeKey": "operationName",
+                "AttributeValue": "Microsoft.Security/alerts/write"
+              },
+              {
+                "RuleName": "Resource Deleted",
+                "AttributeKey": "operationName",
+                "AttributeValue": "Microsoft.Resources/deployments/delete"
+              },
+              {
+                "RuleName": "Security Assessment Completed",
+                "AttributeKey": "operationName",
+                "AttributeValue": "Microsoft.Security/assessments/write"
+              },
+              {
+                "RuleName": "Security Alert Raised",
+                "AttributeKey": "operationName",
+                "AttributeValue": "Microsoft.Security/alerts/write"
+              }
+        ]
+      }
+    ]
+  }
