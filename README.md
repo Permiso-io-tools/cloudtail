@@ -3,7 +3,10 @@
 
 # CloudTail
 
-**Permiso:** [https://permiso.io](https://permiso.io/)
+**Permiso:** [https://permiso.io](https://permiso.io)  
+**Read our release blog:** [https://permiso.io/blog/introducing-cloudtail-an-open-source-tool-for-long-term-cloud-log-retention-and-searchability](https://permiso.io/blog/introducing-cloudtail-an-open-source-tool-for-long-term-cloud-log-retention-and-searchability)
+
+
 
 **Release Date: October 19th, 2024**
 
